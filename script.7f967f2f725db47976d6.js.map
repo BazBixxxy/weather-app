@@ -1,0 +1,1 @@
+{"version":3,"file":"script.7f967f2f725db47976d6.js","mappings":";;;;;AAAAA,OAAO,CAACC,GAAG,CAAC,2BAA2B,CAAC,C","sources":["webpack://web-pack-template/./src/js-files/script.js"],"sourcesContent":["console.log('hi, am in the script file')"],"names":["console","log"],"sourceRoot":""}
