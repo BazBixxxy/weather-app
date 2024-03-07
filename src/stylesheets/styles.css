@@ -1,0 +1,14 @@
+body {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: crimson;
+}
+
+img {
+  width: 200px;
+}

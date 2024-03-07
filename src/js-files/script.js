@@ -1,0 +1,1 @@
+console.log('hi, am in the script file')
