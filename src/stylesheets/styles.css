@@ -1,14 +1,52 @@
-body {
-  height: 50vh;
+section {
+  /* background-color: rgb(52, 52, 52); */
+  background-color: transparent;
+  z-index: 300;
+  flex: 1;
+  position: relative;
+}
+
+.date-display {
+  position: absolute;
+  top: 40px;
+  right: 20px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-h1 {
-  color: crimson;
+.date-display .line {
+  height: 17px;
+  border: 0.1px solid rgba(245, 245, 245, 0.395);
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-img {
-  width: 200px;
+.weather-display {
+  position: absolute;
+  bottom: 250px;
+  right: 20px;
+}
+
+.weather-display h2 {
+  font-weight: 400;
+  font-size: 5.7rem;
+  text-align: right;
+}
+
+.weather-display .line {
+  width: 900px;
+  border: 0.1px solid rgba(245, 245, 245, 0.395);
+  margin-top: 20px;
+}
+
+.city-display {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
+}
+
+.city-display h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin-bottom: 10px;
 }

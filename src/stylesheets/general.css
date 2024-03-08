@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --text-color: whitesmoke;
+}
+
+body {
+  height: 100vh;
+  color: var(--text-color);
+  display: flex;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/rainy.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: 1.3s;
+}

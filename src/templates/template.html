@@ -6,7 +6,67 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <h1>Webpack Template</h1>
-    <img src="../src/images/pawel-czerwinski-LU3c9eECwnc-unsplash.jpg" alt="">
+    <section>
+      <div class="date-display">
+        <div class="date">21 April 2023</div>
+        <div class="line"></div>
+        <div class="time">11:00</div>
+      </div>
+      <div class="weather-display">
+        <h2 id="weather">Heavy Rains</h2>
+        <div class="line"></div>
+      </div>
+      <div class="city-display">
+        <h2>London</h2>
+        2023:3:4 8:00pm
+      </div>
+    </section>
+    <aside>
+      <div class="contents">
+        <div class="top">
+          <div class="search-area">
+            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+            <input type="search" id="input" />
+          </div>
+          <div class="temp-display" id="temp-display">11ºC</div>
+          <div class="wind-display">
+            <i class="fa-solid fa-wind"></i> Northwest 38.9 km/hr
+          </div>
+          <div class="line"></div>
+        </div>
+        <div class="bottom">
+          <h5>Forecasts</h5>
+          <div class="fore-casts">
+            <div class="fore-cast">
+              <div class="left">
+                <img class="morning-icon" src="" alt="" />
+              </div>
+              <div class="right" time="morning">
+                <div class="top">Morning, 7:00 am</div>
+                <div class="bottom">Heavy Rains</div>
+              </div>
+            </div>
+            <div class="fore-cast">
+              <div class="left">
+                <img class="noon-icon" src="" alt="" />
+              </div>
+              <div class="right" time="noon">
+                <div class="top">Noon, 12:00pm</div>
+                <div class="bottom">Heavy Rains</div>
+              </div>
+            </div>
+            <div class="fore-cast">
+              <div class="left">
+                <img class="evening-icon" src="" alt="" />
+              </div>
+              <div class="right" time="evening">
+                <div class="top">Evening, 9:00pm</div>
+                <div class="bottom">Heavy Rains</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
   </body>
 </html>

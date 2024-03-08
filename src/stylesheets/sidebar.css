@@ -1,0 +1,134 @@
+aside {
+  width: 350px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.148);
+  backdrop-filter: blur(10px);
+}
+
+aside > .contents {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+aside > .contents > .top {
+  margin-top: 30px;
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  /* width: 100%; */
+  width: 230px;
+  height: 34px;
+  border: 0.5px solid var(--text-color);
+  background: transparent;
+  color: var(--text-color);
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-top: 3px;
+}
+
+
+.fa-magnifying-glass {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.temp-display {
+  font-size: 5rem;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.wind-display {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  margin-left: 5px;
+}
+
+aside .line {
+  width: 80%;
+  color: var(--text-color);
+  border: 0.1px solid var(--text-color);
+}
+
+aside > .contents > .bottom {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h5 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.day-display {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fore-casts {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.fore-cast {
+  display: flex;
+}
+
+.fore-cast:first-child {
+  margin-top: 30px;
+}
+
+.fore-cast:nth-child(2),
+.fore-cast:nth-child(3) {
+  margin-top: 40px;
+}
+
+.fore-cast > .left {
+  width: 50px;
+  height: 50px;
+  backdrop-filter: blur(30px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.fore-cast > .left img {
+  width: 65%;
+}
+
+.fore-cast > .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 20px;
+  margin-top: 3px;
+  letter-spacing: 1.2px;
+}
+
+.fore-cast > .right > .top {
+  font-size: 1.1rem;
+}
+
+.fore-cast > .right > .bottom {
+  font-weight: 100;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
