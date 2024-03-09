@@ -149,6 +149,11 @@ async function getWeatherData() {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../src/images/rainy2.jpg);
     `;
+  } else {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/rainy2.jpg);
+    `;
   }
 
   if (currentTempC < "-5") {
