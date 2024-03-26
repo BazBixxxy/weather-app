@@ -105,69 +105,69 @@ async function getPhoneWeatherData() {
   <div class="bottom">${nightWeather}</div>
   `;
 
-  if (
-    weatherCondition === "Partly cloudy" ||
-    weatherCondition === "Partly Cloudy" ||
-    weatherCondition === "Overcast"
-  ) {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/partlycloudy.jpg);
-    `;
-  } else if (weatherCondition === "Clear") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/sunny.jpg);
-    `;
-  } else if (weatherCondition === "Sunny") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/sunny-phone.jpg);
-    `;
-  } else if (weatherCondition === "Patchy rain") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/rainy-phone.jpg);
-    `;
-  } else if (
-    weatherCondition === "Patchy rain nearby" ||
-    weatherCondition === "Light rain shower"
-  ) {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/rainy-phone.jpg);
-    `;
-  } else if (weatherCondition === "Light snow") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/cool-phone.jpg);
-    `;
-  } else if (
-    weatherCondition === "Light rain" ||
-    weatherCondition === "Light drizzle"
-  ) {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/drizzle-phone.jpg);
-    `;
-  } else if (weatherCondition === "Mist" || weatherCondition === "Fog") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/misty.jpg);
-    `;
-  } else {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/background-phone.jpg);
-    `;
-  }
+  // if (
+  //   weatherCondition === "Partly cloudy" ||
+  //   weatherCondition === "Partly Cloudy" ||
+  //   weatherCondition === "Overcast"
+  // ) {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/partlycloudy.jpg);
+  //   `;
+  // } else if (weatherCondition === "Clear") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/sunny.jpg);
+  //   `;
+  // } else if (weatherCondition === "Sunny") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/sunny-phone.jpg);
+  //   `;
+  // } else if (weatherCondition === "Patchy rain") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/rainy-phone.jpg);
+  //   `;
+  // } else if (
+  //   weatherCondition === "Patchy rain nearby" ||
+  //   weatherCondition === "Light rain shower"
+  // ) {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/rainy-phone.jpg);
+  //   `;
+  // } else if (weatherCondition === "Light snow") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/cool-phone.jpg);
+  //   `;
+  // } else if (
+  //   weatherCondition === "Light rain" ||
+  //   weatherCondition === "Light drizzle"
+  // ) {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/drizzle-phone.jpg);
+  //   `;
+  // } else if (weatherCondition === "Mist" || weatherCondition === "Fog") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/misty.jpg);
+  //   `;
+  // } else {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/background-phone.jpg);
+  //   `;
+  // }
 
-  if (currentTempC < "3") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/cool-phone.jpg);
-    `;
-  }
+  // if (currentTempC < "3") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/cool-phone.jpg);
+  //   `;
+  // }
 
   document.getElementById("phone-input").value = "";
 }
