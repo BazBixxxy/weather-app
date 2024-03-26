@@ -1,9 +1,5 @@
 import { add, format } from "date-fns";
 
-const dropShow = document.querySelector(".nav-chevron");
-const dropdown = document.querySelector(".dropdown");
-const closeDropDown = document.querySelector(".chev");
-
 async function getPhoneWeatherData() {
   const dateDisplay = document.querySelector(".date-phone-display");
   const weatherDisplay = document.querySelector(".weather-phone-display");
@@ -71,25 +67,25 @@ async function getPhoneWeatherData() {
   var noonWeather = searchData.forecast.forecastday[0].hour[12].condition.text;
   var noonIcon = searchData.forecast.forecastday[0].hour[12].condition.icon;
 
-  var eveningWeather =
-    searchData.forecast.forecastday[0].hour[17].condition.text;
-  var eveningIcon = searchData.forecast.forecastday[0].hour[17].condition.icon;
+  // var eveningWeather =
+  //   searchData.forecast.forecastday[0].hour[17].condition.text;
+  // var eveningIcon = searchData.forecast.forecastday[0].hour[17].condition.icon;
 
   var nightWeather = searchData.forecast.forecastday[0].hour[22].condition.text;
   var nightIcon = searchData.forecast.forecastday[0].hour[22].condition.icon;
 
   const morningSVG = document.querySelector(".Morning-icon");
   const noonSVG = document.querySelector(".Noon-icon");
-  const eveningSVG = document.querySelector(".Evening-icon");
+  // const eveningSVG = document.querySelector(".Evening-icon");
   const nightSVG = document.querySelector(".night-icon");
   const morningForecast = document.querySelector(`[time="Morning"]`);
   const noonForecast = document.querySelector(`[time="Noon"]`);
-  const eveningForecast = document.querySelector(`[time="Evening"]`);
+  // const eveningForecast = document.querySelector(`[time="Evening"]`);
   const nightForecast = document.querySelector('[time="night"]');
 
   morningSVG.src = morningIcon;
   noonSVG.src = noonIcon;
-  eveningSVG.src = eveningIcon;
+  // eveningSVG.src = eveningIcon;
   nightSVG.src = nightIcon;
 
   morningForecast.innerHTML = `
@@ -100,126 +96,86 @@ async function getPhoneWeatherData() {
   <div class="top">Noon, 12:00pm</div>
   <div class="bottom">${noonWeather}</div>
   `;
-  eveningForecast.innerHTML = `
-  <div class="top">Evening, 9:00pm</div>
-  <div class="bottom">${eveningWeather}</div>
-  `;
+  // eveningForecast.innerHTML = `
+  // <div class="top">Evening, 9:00pm</div>
+  // <div class="bottom">${eveningWeather}</div>
+  // `;
   nightForecast.innerHTML = `
   <div class="top">Night, 10:00pm</div>
   <div class="bottom">${nightWeather}</div>
   `;
 
-  // if (
-  //   weatherCondition === "Partly cloudy" ||
-  //   weatherCondition === "Partly Cloudy" ||
-  //   weatherCondition === "Overcast"
-  // ) {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/partlycloudy.jpg);
-  //   `;
-  // } else if (weatherCondition === "Clear") {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/sunny.jpg);
-  //   `;
-  // } else if (weatherCondition === "Sunny") {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/sunny-phone.jpg);
-  //   `;
-  // } else if (
-  //   weatherCondition === "Patchy rain" ||
-  //   weatherCondition === "Patchy rain nearby"
-  // ) {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/rainy-phone.jpg);
-  //   `;
-  // } else if (weatherCondition === "Mist") {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/misty.jpg);
-  //   `;
-  // } else if (weatherCondition === "Fog") {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/fog.jpg);
-  //   `;
-  // } else if (
-  //   weatherCondition === "Light rain" ||
-  //   weatherCondition === "Light drizzle"
-  // ) {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/rainy2.jpg);
-  //   `;
-  // } else {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/background-phone.jpg);
-  //   `;
-  // }
+  if (
+    weatherCondition === "Partly cloudy" ||
+    weatherCondition === "Partly Cloudy" ||
+    weatherCondition === "Overcast"
+  ) {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/partlycloudy.jpg);
+    `;
+  } else if (weatherCondition === "Clear") {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/sunny.jpg);
+    `;
+  } else if (weatherCondition === "Sunny") {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/sunny-phone.jpg);
+    `;
+  } else if (weatherCondition === "Patchy rain") {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/rainy-phone.jpg);
+    `;
+  } else if (
+    weatherCondition === "Patchy rain nearby" ||
+    weatherCondition === "Light rain shower"
+  ) {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/rainy-phone.jpg);
+    `;
+  } else if (weatherCondition === "Light snow") {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/cool-phone.jpg);
+    `;
+  } else if (
+    weatherCondition === "Light rain" ||
+    weatherCondition === "Light drizzle"
+  ) {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/drizzle-phone.jpg);
+    `;
+  } else if (weatherCondition === "Mist" || weatherCondition === "Fog") {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/misty.jpg);
+    `;
+  } else {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/background-phone.jpg);
+    `;
+  }
 
-  // if (currentTempC < "-5") {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/freezing-phone.jpg);
-  //   `;
-  // } else if (currentTempC < "5") {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/cool-phone.jpg);
-  //   `;
-  // }
+  if (currentTempC < "3") {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/cool-phone.jpg);
+    `;
+  }
 
-  // bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/cloudy.jpg);
-  //   `;
+  document.getElementById("phone-input").value = "";
 }
-
-dropShow.addEventListener("click", () => {
-  dropdown.classList.add("show");
-  document.querySelector("nav").style = "display: none;";
-});
-
-closeDropDown.addEventListener("click", () => {
-  dropdown.classList.remove("show");
-  document.querySelector("nav").style = "display: flex;";
-});
 
 document.getElementById("phone-search").addEventListener("click", () => {
   getPhoneWeatherData();
-  dropdown.classList.remove("show");
-  document.querySelector("nav").style = "display: flex;";
 });
 
-const bodyElement = document.querySelector("body");
-
-// if (bodyElement.style.backgroundImage === "") {
-//   bodyElement.style = `
-//     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-//     url(../src/images/cloudy.jpg);
-//     `;
-// }
-
-// var smallScreen = window.matchMedia("(max-width: 900px)");
-
-// smallScreen.addEventListener("change", () => {
-//   document.querySelector("nav").style = "display: none;";
-//   document.querySelector(".dropdown").style = "display: none;";
-//   document.querySelector(".phone-section").style = "display: none;";
-// });
-
-// if (!smallScreen) {
-//   document.querySelector("nav").style = "display: none;";
-//   document.querySelector(".dropdown").style = "display: none;";
-//   document.querySelector(".phone-section").style = "display: none;";
-// }
-
 document.body.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    getPhoneWeatherData();
-  }
+  if (event.key === "Enter") getPhoneWeatherData();
 });

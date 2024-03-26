@@ -6,10 +6,15 @@
       url(../images/cloudy.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url(../images/cloudy.jpg);
+    /* overflow-x: hidden; */
   }
 
   aside {
     display: none;
+  }
+
+  .dropdown{
+    display: flex;
   }
 
   .web {
@@ -17,12 +22,6 @@
   }
   .city-display h2 {
     margin-top: 20px;
-  }
-
-  nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 
   .phone-section {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-  <script defer src="index.48806722206d4b178060.js"></script><script defer src="script.5d5583e76d343ab54ca8.js"></script></head>
+  <script defer src="index.b82a279b5a4aebb080ad.js"></script><script defer src="script.99eb28ae24671dc28281.js"></script></head>
   <body>
     <section class="web">
       <div class="date-display">
@@ -26,7 +26,7 @@
       <div class="contents">
         <div class="top">
           <div class="search-area" id="search">
-            <i class="fa-solid fa-magnifying-glass" ></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
             <input type="search" id="input" />
           </div>
           <div class="temp-display" id="temp-display">11ºC</div>
@@ -70,27 +70,16 @@
       </div>
     </aside>
 
-    <nav>
-      <div class="left">
-        <button class="nav-chevron">
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
-      </div>
+    <nav class="dropdown">
+      <button class="search-button" id="phone-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <input type="search" id="phone-input" />
       <div class="right">
         London
         <i class="fa-solid fa-location-dot"></i>
       </div>
     </nav>
-
-    <div class="dropdown">
-      <button class="search-button" id="phone-search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-      <input type="search" id="phone-input" />
-      <button class="chev">
-        <i class="fa-solid fa-chevron-up"></i>
-      </button>
-    </div>
 
     <div class="phone-section phone">
       <div class="date-display date-phone-display">
@@ -130,15 +119,6 @@
           </div>
           <div class="right" time="Noon">
             <div class="top">Noon, 12:00pm</div>
-            <div class="bottom">Heavy Rains</div>
-          </div>
-        </div>
-        <div class="fore-cast">
-          <div class="left">
-            <img class="Evening-icon" src="" alt="" />
-          </div>
-          <div class="right" time="Evening">
-            <div class="top">Evening, 5:00pm</div>
             <div class="bottom">Heavy Rains</div>
           </div>
         </div>
