@@ -172,6 +172,11 @@ async function getPhoneWeatherData() {
     url(../src/images/cool-phone.jpg);
     `;
   }
+
+  bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/cloudy.jpg);
+    `;
 }
 
 dropShow.addEventListener("click", () => {
