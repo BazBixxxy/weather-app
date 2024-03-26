@@ -1,29 +1,40 @@
 aside {
   width: 350px;
-  height: 100%;
   background-color: rgba(255, 255, 255, 0.148);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 
 aside > .contents {
-  width: 100%;
-  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 aside > .contents > .top {
   margin-top: 30px;
   height: 40%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 input {
-  /* width: 100%; */
   width: 230px;
   height: 34px;
   border: 0.5px solid var(--text-color);
@@ -33,7 +44,6 @@ input {
   padding-left: 5px;
   padding-top: 3px;
 }
-
 
 .fa-magnifying-glass {
   color: var(--text-color);
@@ -58,14 +68,24 @@ aside .line {
   width: 80%;
   color: var(--text-color);
   border: 0.1px solid var(--text-color);
+  margin-bottom: 40px;
 }
 
 aside > .contents > .bottom {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 h5 {
@@ -75,38 +95,58 @@ h5 {
 
 .day-display {
   width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.fore-casts {
+aside .fore-casts {
   width: 70%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.fore-cast {
+aside .fore-cast {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
-.fore-cast:first-child {
+aside .fore-cast:first-child {
   margin-top: 30px;
 }
 
-.fore-cast:nth-child(2),
-.fore-cast:nth-child(3) {
+aside .fore-cast:nth-child(2),
+aside .fore-cast:nth-child(3) {
   margin-top: 40px;
 }
 
 .fore-cast > .left {
   width: 50px;
   height: 50px;
-  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 5px;
 }
 
@@ -115,9 +155,16 @@ h5 {
 }
 
 .fore-cast > .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   margin-left: 20px;
   margin-top: 3px;
   letter-spacing: 1.2px;
@@ -131,4 +178,126 @@ h5 {
   font-weight: 100;
   font-size: 0.8rem;
   margin-top: 5px;
+}
+
+/* phone-layouts */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100dvw;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+  display: none;
+  -webkit-transition: 2s ease all;
+  -o-transition: 2s ease all;
+  transition: 2s ease all;
+  display: none;
+}
+
+nav > .left {
+  margin-left: 30px;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: hsla(0, 0%, 100%, 0.156);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+
+nav > .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  font-size: 1.3rem;
+  color: var(--text-color);
+}
+
+.fa-location-dot {
+  margin-left: 15px;
+}
+
+/* dropdown */
+
+.dropdown {
+  background-color: rgba(240, 248, 255, 0.069);
+  -webkit-backdrop-filter: filter(15px);
+          backdrop-filter: filter(15px);
+  position: fixed;
+  top: -130px;
+  width: 100dvw;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 50px;
+  z-index: 100;
+  -webkit-transition: 1.5s ease all;
+  -o-transition: 1.5s ease all;
+  transition: 1.5s ease all;
+}
+
+.show {
+  top: 0;
+}
+
+.dropdown button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dropdown .fa-magnifying-glass {
+  color: var(--text-color);
+  font-size: 1.6rem;
+}
+
+.dropdown input[type="search"] {
+  border: 1px solid var(--text-color);
+  height: 40px;
+  margin-right: 40px;
+}
+
+.chev {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: hsla(0, 0%, 100%, 0.156);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  margin-left: 50px;
+  margin-right: 10px;
 }

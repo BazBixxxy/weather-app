@@ -1,8 +1,9 @@
 section {
-  /* background-color: rgb(52, 52, 52); */
   background-color: transparent;
   z-index: 300;
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   position: relative;
 }
 
@@ -10,8 +11,12 @@ section {
   position: absolute;
   top: 40px;
   right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .date-display .line {
@@ -21,7 +26,7 @@ section {
   margin-right: 20px;
 }
 
-.weather-display {
+section .weather-display {
   position: absolute;
   bottom: 250px;
   right: 20px;
@@ -34,19 +39,154 @@ section {
 }
 
 .weather-display .line {
+  width: 100%;
   width: 900px;
   border: 0.1px solid rgba(245, 245, 245, 0.395);
   margin-top: 20px;
 }
 
-.city-display {
+section .city-display {
   position: absolute;
   bottom: 100px;
   left: 20px;
 }
 
-.city-display h2 {
+section .city-display h2 {
   font-size: 4rem;
   font-weight: 300;
   margin-bottom: 10px;
+}
+
+/* phone-layout */
+
+.phone-section {
+  width: 100dvw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 150px;
+  display: none;
+}
+
+.phone-section .date-display {
+  position: fixed;
+  top: 105px;
+  left: 200px;
+  margin-right: 20px;
+  width: 300px;
+}
+
+
+.phone-section .weather-display {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.phone-section .weather-display h2 {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.phone-section .city-display {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.phone-section .city-display h2 {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+.phone-section .separation {
+  width: 80%;
+  border: 0.1px solid rgba(245, 245, 245, 0.395);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.phone-section h5 {
+  margin-bottom: 30px;
+}
+
+.phone-section .fore-casts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+}
+
+.phone-section .fore-cast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.phone-section .fore-cast > .left {
+  width: 60px;
+  height: 60px;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  /* background-color: aliceblue; */
+}
+
+.phone-section .fore-cast > .left img {
+  width: 65%;
+}
+
+.phone-section .fore-cast > .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 40px;
+  margin-top: 3px;
+  letter-spacing: 1.2px;
+}
+
+.phone-section .fore-cast > .right > .top {
+  font-size: 1.5rem;
+}
+
+.phone-section .fore-cast > .right > .bottom {
+  font-size: 1.1rem;
 }

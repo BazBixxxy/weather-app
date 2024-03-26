@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-  <script defer src="index.b51c655549afa5f5259a.js"></script><script defer src="script.d56d4867d153c1cabe7b.js"></script></head>
+  <script defer src="index.927f1eb7c99e77cd71e0.js"></script><script defer src="script.66152caf78e0d29d1a1a.js"></script></head>
   <body>
-    <section>
+    <section class="web">
       <div class="date-display">
         <div class="date">21 April 2023</div>
         <div class="line"></div>
@@ -21,11 +21,12 @@
         2023:3:4 8:00pm
       </div>
     </section>
+
     <aside>
       <div class="contents">
         <div class="top">
-          <div class="search-area">
-            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+          <div class="search-area" id="search">
+            <i class="fa-solid fa-magnifying-glass" ></i>
             <input type="search" id="input" />
           </div>
           <div class="temp-display" id="temp-display">11ºC</div>
@@ -68,5 +69,89 @@
         </div>
       </div>
     </aside>
+
+    <nav>
+      <div class="left">
+        <button class="nav-chevron">
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+      <div class="right">
+        London
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+    </nav>
+
+    <div class="dropdown">
+      <button class="search-button" id="phone-search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+      <input type="search" id="phone-input" />
+      <button class="chev">
+        <i class="fa-solid fa-chevron-up"></i>
+      </button>
+    </div>
+
+    <div class="phone-section phone">
+      <div class="date-display date-phone-display">
+        <div class="date">21 April 2023</div>
+        <div class="line"></div>
+        <div class="time">11:00</div>
+      </div>
+
+      <div class="temp-display" id="temp-phone-display">11ºC</div>
+
+      <div class="weather-display weather-phone-display">
+        <h2 id="weather">Heavy Rains</h2>
+      </div>
+
+      <div class="city-display city-phone-display">
+        <h2>London</h2>
+        <div>2023:3:4 | 8:00pm</div>
+      </div>
+
+      <div class="separation"></div>
+
+      <h5>Forecasts</h5>
+
+      <div class="fore-casts">
+        <div class="fore-cast">
+          <div class="left">
+            <img class="Morning-icon" src="" alt="" />
+          </div>
+          <div class="right" time="Morning">
+            <div class="top">Morning, 7:00 am</div>
+            <div class="bottom">Heavy Rains</div>
+          </div>
+        </div>
+        <div class="fore-cast">
+          <div class="left">
+            <img class="Noon-icon" src="" alt="" />
+          </div>
+          <div class="right" time="Noon">
+            <div class="top">Noon, 12:00pm</div>
+            <div class="bottom">Heavy Rains</div>
+          </div>
+        </div>
+        <div class="fore-cast">
+          <div class="left">
+            <img class="Evening-icon" src="" alt="" />
+          </div>
+          <div class="right" time="Evening">
+            <div class="top">Evening, 5:00pm</div>
+            <div class="bottom">Heavy Rains</div>
+          </div>
+        </div>
+        <div class="fore-cast">
+          <div class="left">
+            <img class="night-icon" src="" alt="" />
+          </div>
+          <div class="right" time="night">
+            <div class="top">Night, 10:00pm</div>
+            <div class="bottom">Heavy Rains</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

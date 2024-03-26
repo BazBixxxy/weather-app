@@ -1,6 +1,7 @@
 import "../stylesheets/general.css";
 import "../stylesheets/sidebar.css";
 import "../stylesheets/styles.css";
+import "../stylesheets/media.css";
 import "@fortawesome/fontawesome-free/js/fontawesome";
 import "@fortawesome/fontawesome-free/js/solid";
 import "@fortawesome/fontawesome-free/js/regular";
@@ -25,6 +26,11 @@ async function getWeatherData() {
   const formattedDate = format(currentDate, "MMMM do, yyyy");
 
   console.log(formattedDate);
+
+  document.querySelector("nav > .right").innerHTML = `
+        ${searchElement.value}
+        <i class="fa-solid fa-location-dot"></i>
+  `;
 
   const now = new Date();
   const time = `${now.getHours()}:${now.getMinutes()}`;
@@ -77,19 +83,25 @@ async function getWeatherData() {
   var noonIcon = searchData.forecast.forecastday[0].hour[12].condition.icon;
 
   var eveningWeather =
-    searchData.forecast.forecastday[0].hour[21].condition.text;
-  var eveningIcon = searchData.forecast.forecastday[0].hour[21].condition.icon;
+    searchData.forecast.forecastday[0].hour[17].condition.text;
+  var eveningIcon = searchData.forecast.forecastday[0].hour[17].condition.icon;
+
+  var nightWeather = searchData.forecast.forecastday[0].hour[22].condition.text;
+  var nightIcon = searchData.forecast.forecastday[0].hour[22].condition.icon;
 
   const morningSVG = document.querySelector(".morning-icon");
   const noonSVG = document.querySelector(".noon-icon");
   const eveningSVG = document.querySelector(".evening-icon");
+  const nightSVG = document.querySelector(".night-icon");
   const morningForecast = document.querySelector(`[time="morning"]`);
   const noonForecast = document.querySelector(`[time="noon"]`);
   const eveningForecast = document.querySelector(`[time="evening"]`);
+  const nightForecast = document.querySelector('[time="night"]');
 
   morningSVG.src = morningIcon;
   noonSVG.src = noonIcon;
   eveningSVG.src = eveningIcon;
+  nightSVG.src = nightIcon;
 
   morningForecast.innerHTML = `
   <div class="top">Morning, 7:00 am</div>
@@ -102,6 +114,10 @@ async function getWeatherData() {
   eveningForecast.innerHTML = `
   <div class="top">Evening, 9:00pm</div>
   <div class="bottom">${eveningWeather}</div>
+  `;
+  nightForecast.innerHTML = `
+  <div class="top">Night, 10:00pm</div>
+  <div class="bottom">${nightWeather}</div>
   `;
 
   if (
@@ -169,13 +185,6 @@ async function getWeatherData() {
   }
 }
 
-searchIcon.addEventListener("click", () => {
-  getWeatherData();
-});
-
-document
-  .querySelector(".search-area")
-  .addEventListener("click", getWeatherData);
 
 document.body.addEventListener("keydown", (event) => {
   if (event.key === "Enter") getWeatherData();
@@ -184,3 +193,12 @@ document.body.addEventListener("keydown", (event) => {
 document.getElementById("search").addEventListener("click", () => {
   getWeatherData();
 });
+
+
+var smallScreen = window.matchMedia("(max-width: 900px)");
+
+smallScreen.addEventListener('change', () => {
+  document.querySelector('nav').style = 'display: none;'
+  document.querySelector('.dropdown').style = 'display: none;'
+  document.querySelector('.phone-section').style = 'display: none;'
+})
