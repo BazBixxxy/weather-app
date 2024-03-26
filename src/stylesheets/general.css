@@ -20,11 +20,11 @@ body {
   display: flex;
   position: relative;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))),
-    url(../images/rainy.jpg);
+    url(../images/cloudy.jpg);
   background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/rainy.jpg);
+    url(../images/cloudy.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../images/rainy.jpg);
+    url(../images/cloudy.jpg);
   background-size: cover;
   background-position: center;
   overflow-x: hidden;

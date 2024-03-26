@@ -109,74 +109,74 @@ async function getPhoneWeatherData() {
   <div class="bottom">${nightWeather}</div>
   `;
 
-  if (
-    weatherCondition === "Partly cloudy" ||
-    weatherCondition === "Partly Cloudy" ||
-    weatherCondition === "Overcast"
-  ) {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/partlycloudy.jpg);
-    `;
-  } else if (weatherCondition === "Clear") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/sunny.jpg);
-    `;
-  } else if (weatherCondition === "Sunny") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/sunny-phone.jpg);
-    `;
-  } else if (
-    weatherCondition === "Patchy rain" ||
-    weatherCondition === "Patchy rain nearby"
-  ) {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/rainy-phone.jpg);
-    `;
-  } else if (weatherCondition === "Mist") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/misty.jpg);
-    `;
-  } else if (weatherCondition === "Fog") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/fog.jpg);
-    `;
-  } else if (
-    weatherCondition === "Light rain" ||
-    weatherCondition === "Light drizzle"
-  ) {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/rainy2.jpg);
-    `;
-  } else {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/background-phone.jpg);
-    `;
-  }
+  // if (
+  //   weatherCondition === "Partly cloudy" ||
+  //   weatherCondition === "Partly Cloudy" ||
+  //   weatherCondition === "Overcast"
+  // ) {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/partlycloudy.jpg);
+  //   `;
+  // } else if (weatherCondition === "Clear") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/sunny.jpg);
+  //   `;
+  // } else if (weatherCondition === "Sunny") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/sunny-phone.jpg);
+  //   `;
+  // } else if (
+  //   weatherCondition === "Patchy rain" ||
+  //   weatherCondition === "Patchy rain nearby"
+  // ) {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/rainy-phone.jpg);
+  //   `;
+  // } else if (weatherCondition === "Mist") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/misty.jpg);
+  //   `;
+  // } else if (weatherCondition === "Fog") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/fog.jpg);
+  //   `;
+  // } else if (
+  //   weatherCondition === "Light rain" ||
+  //   weatherCondition === "Light drizzle"
+  // ) {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/rainy2.jpg);
+  //   `;
+  // } else {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/background-phone.jpg);
+  //   `;
+  // }
 
-  if (currentTempC < "-5") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/freezing-phone.jpg);
-    `;
-  } else if (currentTempC < "5") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/cool-phone.jpg);
-    `;
-  }
+  // if (currentTempC < "-5") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/freezing-phone.jpg);
+  //   `;
+  // } else if (currentTempC < "5") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/cool-phone.jpg);
+  //   `;
+  // }
 
-  bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/cloudy.jpg);
-    `;
+  // bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/cloudy.jpg);
+  //   `;
 }
 
 dropShow.addEventListener("click", () => {
@@ -197,31 +197,29 @@ document.getElementById("phone-search").addEventListener("click", () => {
 
 const bodyElement = document.querySelector("body");
 
-if (bodyElement.style.backgroundImage === "") {
-  bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/cloudy.jpg);
-    `;
-}
+// if (bodyElement.style.backgroundImage === "") {
+//   bodyElement.style = `
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+//     url(../src/images/cloudy.jpg);
+//     `;
+// }
 
-var smallScreen = window.matchMedia("(max-width: 900px)");
+// var smallScreen = window.matchMedia("(max-width: 900px)");
 
-smallScreen.addEventListener("change", () => {
-  document.querySelector("nav").style = "display: none;";
-  document.querySelector(".dropdown").style = "display: none;";
-  document.querySelector(".phone-section").style = "display: none;";
-});
+// smallScreen.addEventListener("change", () => {
+//   document.querySelector("nav").style = "display: none;";
+//   document.querySelector(".dropdown").style = "display: none;";
+//   document.querySelector(".phone-section").style = "display: none;";
+// });
 
-if (!smallScreen) {
-  document.querySelector("nav").style = "display: none;";
-  document.querySelector(".dropdown").style = "display: none;";
-  document.querySelector(".phone-section").style = "display: none;";
-}
+// if (!smallScreen) {
+//   document.querySelector("nav").style = "display: none;";
+//   document.querySelector(".dropdown").style = "display: none;";
+//   document.querySelector(".phone-section").style = "display: none;";
+// }
 
 document.body.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
     getPhoneWeatherData();
-    dropdown.classList.remove("show");
-    document.querySelector("nav").style = "display: flex;";
   }
 });

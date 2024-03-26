@@ -120,74 +120,74 @@ async function getWeatherData() {
   <div class="bottom">${nightWeather}</div>
   `;
 
-  if (
-    weatherCondition === "Partly cloudy" ||
-    weatherCondition === "Partly Cloudy" ||
-    weatherCondition === "Overcast"
-  ) {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/partlycloudy.jpg);
-    `;
-  } else if (weatherCondition === "Clear") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/sunny.jpg);
-    `;
-  } else if (weatherCondition === "Sunny") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/clear2.jpg);
-    `;
-  } else if (
-    weatherCondition === "Patchy rain" ||
-    weatherCondition === "Patchy rain nearby"
-  ) {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/patchyrains.jpg);
-    `;
-  } else if (weatherCondition === "Mist") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/misty.jpg);
-    `;
-  } else if (weatherCondition === "Fog") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/fog.jpg);
-    `;
-  } else if (
-    weatherCondition === "Light rain" ||
-    weatherCondition === "Light drizzle"
-  ) {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/rainy2.jpg);
-    `;
-  } else {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/rainy2.jpg);
-    `;
-  }
+  // if (
+  //   weatherCondition === "Partly cloudy" ||
+  //   weatherCondition === "Partly Cloudy" ||
+  //   weatherCondition === "Overcast"
+  // ) {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/partlycloudy.jpg);
+  //   `;
+  // } else if (weatherCondition === "Clear") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/sunny.jpg);
+  //   `;
+  // } else if (weatherCondition === "Sunny") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/clear2.jpg);
+  //   `;
+  // } else if (
+  //   weatherCondition === "Patchy rain" ||
+  //   weatherCondition === "Patchy rain nearby"
+  // ) {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/patchyrains.jpg);
+  //   `;
+  // } else if (weatherCondition === "Mist") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/misty.jpg);
+  //   `;
+  // } else if (weatherCondition === "Fog") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/fog.jpg);
+  //   `;
+  // } else if (
+  //   weatherCondition === "Light rain" ||
+  //   weatherCondition === "Light drizzle"
+  // ) {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/rainy2.jpg);
+  //   `;
+  // } else {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/rainy2.jpg);
+  //   `;
+  // }
 
-  if (currentTempC < "-5") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/freezing.jpg);
-    `;
-  } else if (currentTempC < "5") {
-    bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/snow.jpg);
-    `;
-  }
+  // if (currentTempC < "-5") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/freezing.jpg);
+  //   `;
+  // } else if (currentTempC < "5") {
+  //   bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/snow.jpg);
+  //   `;
+  // }
 
-  bodyElement.style = `
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../src/images/cloudy.jpg);
-    `;
+  // bodyElement.style = `
+  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  //   url(../src/images/cloudy.jpg);
+  //   `;
 }
 
 document.body.addEventListener("keydown", (event) => {
