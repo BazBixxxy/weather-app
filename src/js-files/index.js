@@ -183,8 +183,12 @@ async function getWeatherData() {
     url(../src/images/snow.jpg);
     `;
   }
-}
 
+  bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/cloudy.jpg);
+    `;
+}
 
 document.body.addEventListener("keydown", (event) => {
   if (event.key === "Enter") getWeatherData();
@@ -193,5 +197,3 @@ document.body.addEventListener("keydown", (event) => {
 document.getElementById("search").addEventListener("click", () => {
   getWeatherData();
 });
-
-
