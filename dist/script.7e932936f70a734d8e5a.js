@@ -3840,8 +3840,33 @@ document.getElementById("phone-search").addEventListener("click", () => {
   dropdown.classList.remove("show");
   document.querySelector("nav").style = "display: flex;";
 });
+const bodyElement = document.querySelector("body");
+if (bodyElement.style.backgroundImage === "") {
+  bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/cloudy.jpg);
+    `;
+}
+var smallScreen = window.matchMedia("(max-width: 900px)");
+smallScreen.addEventListener("change", () => {
+  document.querySelector("nav").style = "display: none;";
+  document.querySelector(".dropdown").style = "display: none;";
+  document.querySelector(".phone-section").style = "display: none;";
+});
+if (!smallScreen) {
+  document.querySelector("nav").style = "display: none;";
+  document.querySelector(".dropdown").style = "display: none;";
+  document.querySelector(".phone-section").style = "display: none;";
+}
+document.body.addEventListener("keydown", event => {
+  if (event.key === "Enter") {
+    getPhoneWeatherData();
+    dropdown.classList.remove("show");
+    document.querySelector("nav").style = "display: flex;";
+  }
+});
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=script.66152caf78e0d29d1a1a.js.map
+//# sourceMappingURL=script.7e932936f70a734d8e5a.js.map

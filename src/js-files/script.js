@@ -189,3 +189,34 @@ document.getElementById("phone-search").addEventListener("click", () => {
   dropdown.classList.remove("show");
   document.querySelector("nav").style = "display: flex;";
 });
+
+const bodyElement = document.querySelector("body");
+
+if (bodyElement.style.backgroundImage === "") {
+  bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/cloudy.jpg);
+    `;
+}
+
+var smallScreen = window.matchMedia("(max-width: 900px)");
+
+smallScreen.addEventListener("change", () => {
+  document.querySelector("nav").style = "display: none;";
+  document.querySelector(".dropdown").style = "display: none;";
+  document.querySelector(".phone-section").style = "display: none;";
+});
+
+if (!smallScreen) {
+  document.querySelector("nav").style = "display: none;";
+  document.querySelector(".dropdown").style = "display: none;";
+  document.querySelector(".phone-section").style = "display: none;";
+}
+
+document.body.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    getPhoneWeatherData();
+    dropdown.classList.remove("show");
+    document.querySelector("nav").style = "display: flex;";
+  }
+});

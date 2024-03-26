@@ -195,10 +195,3 @@ document.getElementById("search").addEventListener("click", () => {
 });
 
 
-var smallScreen = window.matchMedia("(max-width: 900px)");
-
-smallScreen.addEventListener('change', () => {
-  document.querySelector('nav').style = 'display: none;'
-  document.querySelector('.dropdown').style = 'display: none;'
-  document.querySelector('.phone-section').style = 'display: none;'
-})

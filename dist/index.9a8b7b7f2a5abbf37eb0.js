@@ -6136,13 +6136,13 @@ body {
     url(${___CSS_LOADER_URL_REPLACEMENT_0___});
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  overflow-x: hidden;
   /* transition: 1.3s; */
 }
 
 input{
   font-size: 1rem;
-}`, "",{"version":3,"sources":["webpack://./src/stylesheets/general.css"],"names":[],"mappings":"AAAA;;;EAGE,SAAS;EACT,UAAU;EACV,8BAA8B;UACtB,sBAAsB;EAC9B,uBAAuB;AACzB;;AAEA;EACE,wBAAwB;AAC1B;;AAEA;EACE,aAAa;EACb,wBAAwB;EACxB,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,kBAAkB;EAClB;2CAC0B;EAC1B;2CAC0B;EAC1B;2CAC0B;EAC1B,sBAAsB;EACtB,2BAA2B;EAC3B,gBAAgB;EAChB,sBAAsB;AACxB;;AAEA;EACE,eAAe;AACjB","sourcesContent":["*,\n*::after,\n*::before {\n  margin: 0;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  font-family: sans-serif;\n}\n\n:root {\n  --text-color: whitesmoke;\n}\n\nbody {\n  height: 100vh;\n  color: var(--text-color);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  position: relative;\n  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))),\n    url(../images/rainy.jpg);\n  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),\n    url(../images/rainy.jpg);\n  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),\n    url(../images/rainy.jpg);\n  background-size: cover;\n  background-position: center;\n  overflow: hidden;\n  /* transition: 1.3s; */\n}\n\ninput{\n  font-size: 1rem;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/stylesheets/general.css"],"names":[],"mappings":"AAAA;;;EAGE,SAAS;EACT,UAAU;EACV,8BAA8B;UACtB,sBAAsB;EAC9B,uBAAuB;AACzB;;AAEA;EACE,wBAAwB;AAC1B;;AAEA;EACE,aAAa;EACb,wBAAwB;EACxB,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,kBAAkB;EAClB;2CAC0B;EAC1B;2CAC0B;EAC1B;2CAC0B;EAC1B,sBAAsB;EACtB,2BAA2B;EAC3B,kBAAkB;EAClB,sBAAsB;AACxB;;AAEA;EACE,eAAe;AACjB","sourcesContent":["*,\n*::after,\n*::before {\n  margin: 0;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  font-family: sans-serif;\n}\n\n:root {\n  --text-color: whitesmoke;\n}\n\nbody {\n  height: 100vh;\n  color: var(--text-color);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  position: relative;\n  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))),\n    url(../images/rainy.jpg);\n  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),\n    url(../images/rainy.jpg);\n  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),\n    url(../images/rainy.jpg);\n  background-size: cover;\n  background-position: center;\n  overflow-x: hidden;\n  /* transition: 1.3s; */\n}\n\ninput{\n  font-size: 1rem;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6572,8 +6572,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `section {
   background-color: transparent;
   z-index: 300;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   position: relative;
 }
 
@@ -6585,8 +6585,8 @@ ___CSS_LOADER_EXPORT___.push([module.id, `section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .date-display .line {
@@ -6636,23 +6636,20 @@ section .city-display h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 150px;
   display: none;
 }
 
 .phone-section .date-display {
-  position: fixed;
-  top: 105px;
-  left: 200px;
-  margin-right: 20px;
-  width: 300px;
+  position: absolute;
+  top: 100px;
+  right: 30px;
 }
-
 
 .phone-section .weather-display {
   width: 300px;
@@ -6672,11 +6669,11 @@ section .city-display h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 0.5rem;
   font-size: 1.1rem;
 }
@@ -6704,8 +6701,8 @@ section .city-display h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 3rem;
 }
 
@@ -6719,16 +6716,16 @@ section .city-display h2 {
   width: 60px;
   height: 60px;
   -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 5px;
   /* background-color: aliceblue; */
 }
@@ -6743,11 +6740,11 @@ section .city-display h2 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-left: 40px;
   margin-top: 3px;
   letter-spacing: 1.2px;
@@ -6759,7 +6756,8 @@ section .city-display h2 {
 
 .phone-section .fore-cast > .right > .bottom {
   font-size: 1.1rem;
-}`, "",{"version":3,"sources":["webpack://./src/stylesheets/styles.css"],"names":[],"mappings":"AAAA;EACE,6BAA6B;EAC7B,YAAY;EACZ,mBAAmB;MACf,WAAW;UACP,OAAO;EACf,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,SAAS;EACT,WAAW;EACX,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,yBAAyB;MACrB,sBAAsB;UAClB,mBAAmB;AAC7B;;AAEA;EACE,YAAY;EACZ,8CAA8C;EAC9C,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,WAAW;AACb;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,8CAA8C;EAC9C,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,UAAU;AACZ;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA,iBAAiB;;AAEjB;EACE,aAAa;EACb,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,4BAA4B;EAC5B,6BAA6B;MACzB,0BAA0B;UACtB,sBAAsB;EAC9B,yBAAyB;MACrB,sBAAsB;UAClB,mBAAmB;EAC3B,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,eAAe;EACf,UAAU;EACV,WAAW;EACX,kBAAkB;EAClB,YAAY;AACd;;;AAGA;EACE,YAAY;EACZ,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,4BAA4B;EAC5B,6BAA6B;MACzB,0BAA0B;UACtB,sBAAsB;EAC9B,yBAAyB;MACrB,sBAAsB;UAClB,mBAAmB;EAC3B,WAAW;EACX,iBAAiB;AACnB;;AAEA;EACE,SAAS;EACT,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,UAAU;EACV,8CAA8C;EAC9C,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,4BAA4B;EAC5B,6BAA6B;MACzB,0BAA0B;UACtB,sBAAsB;EAC9B,SAAS;AACX;;AAEA;EACE,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;AACf;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,mCAAmC;UAC3B,2BAA2B;EACnC,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,yBAAyB;MACrB,sBAAsB;UAClB,mBAAmB;EAC3B,wBAAwB;MACpB,qBAAqB;UACjB,uBAAuB;EAC/B,kBAAkB;EAClB,iCAAiC;AACnC;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,4BAA4B;EAC5B,6BAA6B;MACzB,0BAA0B;UACtB,sBAAsB;EAC9B,uBAAuB;MACnB,oBAAoB;UAChB,2BAA2B;EACnC,iBAAiB;EACjB,eAAe;EACf,qBAAqB;AACvB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;AACnB","sourcesContent":["section {\n  background-color: transparent;\n  z-index: 300;\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  position: relative;\n}\n\n.date-display {\n  position: absolute;\n  top: 40px;\n  right: 20px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n\n.date-display .line {\n  height: 17px;\n  border: 0.1px solid rgba(245, 245, 245, 0.395);\n  margin-left: 20px;\n  margin-right: 20px;\n}\n\nsection .weather-display {\n  position: absolute;\n  bottom: 250px;\n  right: 20px;\n}\n\n.weather-display h2 {\n  font-weight: 400;\n  font-size: 5.7rem;\n  text-align: right;\n}\n\n.weather-display .line {\n  width: 100%;\n  width: 900px;\n  border: 0.1px solid rgba(245, 245, 245, 0.395);\n  margin-top: 20px;\n}\n\nsection .city-display {\n  position: absolute;\n  bottom: 100px;\n  left: 20px;\n}\n\nsection .city-display h2 {\n  font-size: 4rem;\n  font-weight: 300;\n  margin-bottom: 10px;\n}\n\n/* phone-layout */\n\n.phone-section {\n  width: 100dvw;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-top: 150px;\n  display: none;\n}\n\n.phone-section .date-display {\n  position: fixed;\n  top: 105px;\n  left: 200px;\n  margin-right: 20px;\n  width: 300px;\n}\n\n\n.phone-section .weather-display {\n  width: 300px;\n  margin-top: 20px;\n}\n\n.phone-section .weather-display h2 {\n  font-size: 1.7rem;\n  text-align: center;\n  font-weight: 400;\n}\n\n.phone-section .city-display {\n  margin-top: 20px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  gap: 0.5rem;\n  font-size: 1.1rem;\n}\n\n.phone-section .city-display h2 {\n  margin: 0;\n  font-size: 1.4rem;\n  font-weight: 100;\n}\n\n.phone-section .separation {\n  width: 80%;\n  border: 0.1px solid rgba(245, 245, 245, 0.395);\n  margin-top: 30px;\n  margin-bottom: 30px;\n}\n\n.phone-section h5 {\n  margin-bottom: 30px;\n}\n\n.phone-section .fore-casts {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  gap: 3rem;\n}\n\n.phone-section .fore-cast {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n\n.phone-section .fore-cast > .left {\n  width: 60px;\n  height: 60px;\n  -webkit-backdrop-filter: blur(30px);\n          backdrop-filter: blur(30px);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  border-radius: 5px;\n  /* background-color: aliceblue; */\n}\n\n.phone-section .fore-cast > .left img {\n  width: 65%;\n}\n\n.phone-section .fore-cast > .right {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n  margin-left: 40px;\n  margin-top: 3px;\n  letter-spacing: 1.2px;\n}\n\n.phone-section .fore-cast > .right > .top {\n  font-size: 1.5rem;\n}\n\n.phone-section .fore-cast > .right > .bottom {\n  font-size: 1.1rem;\n}"],"sourceRoot":""}]);
+}
+`, "",{"version":3,"sources":["webpack://./src/stylesheets/styles.css"],"names":[],"mappings":"AAAA;EACE,6BAA6B;EAC7B,YAAY;EACZ,mBAAmB;EACnB,WAAW;EACX,OAAO;EACP,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,SAAS;EACT,WAAW;EACX,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,yBAAyB;EACzB,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,YAAY;EACZ,8CAA8C;EAC9C,iBAAiB;EACjB,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,WAAW;AACb;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;EACjB,iBAAiB;AACnB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,8CAA8C;EAC9C,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;EAClB,aAAa;EACb,UAAU;AACZ;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA,iBAAiB;;AAEjB;EACE,aAAa;EACb,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,4BAA4B;EAC5B,6BAA6B;EAC7B,0BAA0B;EAC1B,sBAAsB;EACtB,yBAAyB;EACzB,sBAAsB;EACtB,mBAAmB;EACnB,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,kBAAkB;EAClB,UAAU;EACV,WAAW;AACb;;AAEA;EACE,YAAY;EACZ,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;EACjB,kBAAkB;EAClB,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,4BAA4B;EAC5B,6BAA6B;EAC7B,0BAA0B;EAC1B,sBAAsB;EACtB,yBAAyB;EACzB,sBAAsB;EACtB,mBAAmB;EACnB,WAAW;EACX,iBAAiB;AACnB;;AAEA;EACE,SAAS;EACT,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,UAAU;EACV,8CAA8C;EAC9C,gBAAgB;EAChB,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,4BAA4B;EAC5B,6BAA6B;EAC7B,0BAA0B;EAC1B,sBAAsB;EACtB,SAAS;AACX;;AAEA;EACE,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;AACf;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,mCAAmC;EACnC,2BAA2B;EAC3B,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,yBAAyB;EACzB,sBAAsB;EACtB,mBAAmB;EACnB,wBAAwB;EACxB,qBAAqB;EACrB,uBAAuB;EACvB,kBAAkB;EAClB,iCAAiC;AACnC;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,4BAA4B;EAC5B,6BAA6B;EAC7B,0BAA0B;EAC1B,sBAAsB;EACtB,uBAAuB;EACvB,oBAAoB;EACpB,2BAA2B;EAC3B,iBAAiB;EACjB,eAAe;EACf,qBAAqB;AACvB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,iBAAiB;AACnB","sourcesContent":["section {\n  background-color: transparent;\n  z-index: 300;\n  -webkit-box-flex: 1;\n  -ms-flex: 1;\n  flex: 1;\n  position: relative;\n}\n\n.date-display {\n  position: absolute;\n  top: 40px;\n  right: 20px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n}\n\n.date-display .line {\n  height: 17px;\n  border: 0.1px solid rgba(245, 245, 245, 0.395);\n  margin-left: 20px;\n  margin-right: 20px;\n}\n\nsection .weather-display {\n  position: absolute;\n  bottom: 250px;\n  right: 20px;\n}\n\n.weather-display h2 {\n  font-weight: 400;\n  font-size: 5.7rem;\n  text-align: right;\n}\n\n.weather-display .line {\n  width: 100%;\n  width: 900px;\n  border: 0.1px solid rgba(245, 245, 245, 0.395);\n  margin-top: 20px;\n}\n\nsection .city-display {\n  position: absolute;\n  bottom: 100px;\n  left: 20px;\n}\n\nsection .city-display h2 {\n  font-size: 4rem;\n  font-weight: 300;\n  margin-bottom: 10px;\n}\n\n/* phone-layout */\n\n.phone-section {\n  width: 100dvw;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: column;\n  flex-direction: column;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  margin-top: 150px;\n  display: none;\n}\n\n.phone-section .date-display {\n  position: absolute;\n  top: 100px;\n  right: 30px;\n}\n\n.phone-section .weather-display {\n  width: 300px;\n  margin-top: 20px;\n}\n\n.phone-section .weather-display h2 {\n  font-size: 1.7rem;\n  text-align: center;\n  font-weight: 400;\n}\n\n.phone-section .city-display {\n  margin-top: 20px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: column;\n  flex-direction: column;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  gap: 0.5rem;\n  font-size: 1.1rem;\n}\n\n.phone-section .city-display h2 {\n  margin: 0;\n  font-size: 1.4rem;\n  font-weight: 100;\n}\n\n.phone-section .separation {\n  width: 80%;\n  border: 0.1px solid rgba(245, 245, 245, 0.395);\n  margin-top: 30px;\n  margin-bottom: 30px;\n}\n\n.phone-section h5 {\n  margin-bottom: 30px;\n}\n\n.phone-section .fore-casts {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: column;\n  flex-direction: column;\n  gap: 3rem;\n}\n\n.phone-section .fore-cast {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n\n.phone-section .fore-cast > .left {\n  width: 60px;\n  height: 60px;\n  -webkit-backdrop-filter: blur(30px);\n  backdrop-filter: blur(30px);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  border-radius: 5px;\n  /* background-color: aliceblue; */\n}\n\n.phone-section .fore-cast > .left img {\n  width: 65%;\n}\n\n.phone-section .fore-cast > .right {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: column;\n  flex-direction: column;\n  -webkit-box-pack: start;\n  -ms-flex-pack: start;\n  justify-content: flex-start;\n  margin-left: 40px;\n  margin-top: 3px;\n  letter-spacing: 1.2px;\n}\n\n.phone-section .fore-cast > .right > .top {\n  font-size: 1.5rem;\n}\n\n.phone-section .fore-cast > .right > .bottom {\n  font-size: 1.1rem;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11406,14 +11404,8 @@ document.body.addEventListener("keydown", event => {
 document.getElementById("search").addEventListener("click", () => {
   getWeatherData();
 });
-var smallScreen = window.matchMedia("(max-width: 900px)");
-smallScreen.addEventListener('change', () => {
-  document.querySelector('nav').style = 'display: none;';
-  document.querySelector('.dropdown').style = 'display: none;';
-  document.querySelector('.phone-section').style = 'display: none;';
-});
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index.927f1eb7c99e77cd71e0.js.map
+//# sourceMappingURL=index.9a8b7b7f2a5abbf37eb0.js.map
