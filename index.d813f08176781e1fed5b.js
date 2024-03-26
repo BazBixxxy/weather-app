@@ -6242,7 +6242,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `aside {
   width: 350px;
   background-color: rgba(255, 255, 255, 0.148);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 aside > .contents {
@@ -6251,11 +6251,11 @@ aside > .contents {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 aside > .contents > .top {
@@ -6267,11 +6267,11 @@ aside > .contents > .top {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 input {
@@ -6313,19 +6313,19 @@ aside .line {
 
 aside > .contents > .bottom {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 h5 {
@@ -6339,8 +6339,8 @@ h5 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 aside .fore-casts {
@@ -6351,11 +6351,11 @@ aside .fore-casts {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 aside .fore-cast {
@@ -6377,16 +6377,16 @@ aside .fore-cast:nth-child(3) {
   width: 50px;
   height: 50px;
   -webkit-backdrop-filter: blur(30px);
-          backdrop-filter: blur(30px);
+  backdrop-filter: blur(30px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 5px;
 }
 
@@ -6400,11 +6400,11 @@ aside .fore-cast:nth-child(3) {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   margin-left: 20px;
   margin-top: 3px;
   letter-spacing: 1.2px;
@@ -6423,13 +6423,13 @@ aside .fore-cast:nth-child(3) {
 /* phone-layouts */
 
 nav {
-  position: fixed;
+  position: absolute;
   top: 0;
-  width: 100dvw;
+  width: 100%;
   height: 100px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   z-index: 10;
   display: none;
   -webkit-transition: 2s ease all;
@@ -6453,22 +6453,22 @@ nav button {
   cursor: pointer;
   background-color: hsla(0, 0%, 100%, 0.156);
   -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 }
 
 nav > .right {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-right: 20px;
   font-size: 1.3rem;
   color: var(--text-color);
@@ -6483,7 +6483,7 @@ nav > .right {
 .dropdown {
   background-color: rgba(240, 248, 255, 0.069);
   -webkit-backdrop-filter: filter(15px);
-          backdrop-filter: filter(15px);
+  backdrop-filter: filter(15px);
   position: fixed;
   top: -130px;
   width: 100dvw;
@@ -6492,11 +6492,11 @@ nav > .right {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   padding-left: 50px;
   z-index: 100;
   -webkit-transition: 1.5s ease all;
@@ -6537,11 +6537,11 @@ nav > .right {
   cursor: pointer;
   background-color: hsla(0, 0%, 100%, 0.156);
   -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
   margin-left: 50px;
   margin-right: 10px;
 }
-`, "",{"version":3,"sources":["webpack://./src/stylesheets/sidebar.css"],"names":[],"mappings":"AAAA;EACE,YAAY;EACZ,4CAA4C;EAC5C,mCAAmC;UAC3B,2BAA2B;AACrC;;AAEA;EACE,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,4BAA4B;EAC5B,6BAA6B;MACzB,0BAA0B;UACtB,sBAAsB;EAC9B,yBAAyB;MACrB,sBAAsB;UAClB,mBAAmB;AAC7B;;AAEA;EACE,gBAAgB;EAChB,WAAW;EACX,WAAW;EACX,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,4BAA4B;EAC5B,6BAA6B;MACzB,0BAA0B;UACtB,sBAAsB;EAC9B,yBAAyB;MACrB,sBAAsB;UAClB,mBAAmB;AAC7B;;AAEA;EACE,YAAY;EACZ,YAAY;EACZ,qCAAqC;EACrC,uBAAuB;EACvB,wBAAwB;EACxB,kBAAkB;EAClB,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,wBAAwB;EACxB,iBAAiB;EACjB,kBAAkB;EAClB,eAAe;AACjB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,UAAU;EACV,wBAAwB;EACxB,qCAAqC;EACrC,mBAAmB;AACrB;;AAEA;EACE,mBAAmB;MACf,WAAW;UACP,OAAO;EACf,WAAW;EACX,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,4BAA4B;EAC5B,6BAA6B;MACzB,0BAA0B;UACtB,sBAAsB;EAC9B,yBAAyB;MACrB,sBAAsB;UAClB,mBAAmB;AAC7B;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,UAAU;EACV,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,yBAAyB;MACrB,sBAAsB;UAClB,8BAA8B;AACxC;;AAEA;EACE,UAAU;EACV,YAAY;EACZ,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,4BAA4B;EAC5B,6BAA6B;MACzB,0BAA0B;UACtB,sBAAsB;EAC9B,uBAAuB;MACnB,oBAAoB;UAChB,2BAA2B;AACrC;;AAEA;EACE,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;AACf;;AAEA;EACE,gBAAgB;AAClB;;AAEA;;EAEE,gBAAgB;AAClB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,mCAAmC;UAC3B,2BAA2B;EACnC,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,yBAAyB;MACrB,sBAAsB;UAClB,mBAAmB;EAC3B,wBAAwB;MACpB,qBAAqB;UACjB,uBAAuB;EAC/B,kBAAkB;AACpB;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,4BAA4B;EAC5B,6BAA6B;MACzB,0BAA0B;UACtB,sBAAsB;EAC9B,uBAAuB;MACnB,oBAAoB;UAChB,2BAA2B;EACnC,iBAAiB;EACjB,eAAe;EACf,qBAAqB;AACvB;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,iBAAiB;EACjB,eAAe;AACjB;;AAEA,kBAAkB;;AAElB;EACE,eAAe;EACf,MAAM;EACN,aAAa;EACb,aAAa;EACb,yBAAyB;MACrB,sBAAsB;UAClB,mBAAmB;EAC3B,WAAW;EACX,aAAa;EACb,+BAA+B;EAC/B,0BAA0B;EAC1B,uBAAuB;EACvB,aAAa;AACf;;AAEA;EACE,iBAAiB;AACnB;;AAEA;EACE,gBAAgB;EAChB,YAAY;EACZ,wBAAwB;EACxB,WAAW;EACX,YAAY;EACZ,mBAAmB;EACnB,iBAAiB;EACjB,eAAe;EACf,0CAA0C;EAC1C,mCAAmC;UAC3B,2BAA2B;AACrC;;AAEA;EACE,mBAAmB;MACf,WAAW;UACP,OAAO;EACf,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,qBAAqB;MACjB,kBAAkB;UACd,yBAAyB;EACjC,yBAAyB;MACrB,sBAAsB;UAClB,mBAAmB;EAC3B,kBAAkB;EAClB,iBAAiB;EACjB,wBAAwB;AAC1B;;AAEA;EACE,iBAAiB;AACnB;;AAEA,aAAa;;AAEb;EACE,4CAA4C;EAC5C,qCAAqC;UAC7B,6BAA6B;EACrC,eAAe;EACf,WAAW;EACX,aAAa;EACb,aAAa;EACb,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,yBAAyB;MACrB,sBAAsB;UAClB,mBAAmB;EAC3B,uBAAuB;MACnB,oBAAoB;UAChB,2BAA2B;EACnC,kBAAkB;EAClB,YAAY;EACZ,iCAAiC;EACjC,4BAA4B;EAC5B,yBAAyB;AAC3B;;AAEA;EACE,MAAM;AACR;;AAEA;EACE,gBAAgB;EAChB,YAAY;EACZ,iBAAiB;EACjB,eAAe;AACjB;;AAEA;EACE,wBAAwB;EACxB,iBAAiB;AACnB;;AAEA;EACE,mCAAmC;EACnC,YAAY;EACZ,kBAAkB;AACpB;;AAEA;EACE,gBAAgB;EAChB,YAAY;EACZ,wBAAwB;EACxB,WAAW;EACX,YAAY;EACZ,mBAAmB;EACnB,iBAAiB;EACjB,eAAe;EACf,0CAA0C;EAC1C,mCAAmC;UAC3B,2BAA2B;EACnC,iBAAiB;EACjB,kBAAkB;AACpB","sourcesContent":["aside {\n  width: 350px;\n  background-color: rgba(255, 255, 255, 0.148);\n  -webkit-backdrop-filter: blur(10px);\n          backdrop-filter: blur(10px);\n}\n\naside > .contents {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n\naside > .contents > .top {\n  margin-top: 30px;\n  height: 40%;\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n\ninput {\n  width: 230px;\n  height: 34px;\n  border: 0.5px solid var(--text-color);\n  background: transparent;\n  color: var(--text-color);\n  border-radius: 5px;\n  padding-left: 5px;\n  padding-top: 3px;\n}\n\n.fa-magnifying-glass {\n  color: var(--text-color);\n  font-size: 1.4rem;\n  margin-right: 15px;\n  cursor: pointer;\n}\n\n.temp-display {\n  font-size: 5rem;\n  margin-top: 20px;\n  margin-left: 5px;\n}\n\n.wind-display {\n  margin-top: 40px;\n  margin-bottom: 50px;\n  margin-left: 5px;\n}\n\naside .line {\n  width: 80%;\n  color: var(--text-color);\n  border: 0.1px solid var(--text-color);\n  margin-bottom: 40px;\n}\n\naside > .contents > .bottom {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n\nh5 {\n  font-size: 1.3rem;\n  font-weight: 400;\n}\n\n.day-display {\n  width: 70%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n\naside .fore-casts {\n  width: 70%;\n  height: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n}\n\naside .fore-cast {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n\naside .fore-cast:first-child {\n  margin-top: 30px;\n}\n\naside .fore-cast:nth-child(2),\naside .fore-cast:nth-child(3) {\n  margin-top: 40px;\n}\n\n.fore-cast > .left {\n  width: 50px;\n  height: 50px;\n  -webkit-backdrop-filter: blur(30px);\n          backdrop-filter: blur(30px);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  border-radius: 5px;\n}\n\n.fore-cast > .left img {\n  width: 65%;\n}\n\n.fore-cast > .right {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n  margin-left: 20px;\n  margin-top: 3px;\n  letter-spacing: 1.2px;\n}\n\n.fore-cast > .right > .top {\n  font-size: 1.1rem;\n}\n\n.fore-cast > .right > .bottom {\n  font-weight: 100;\n  font-size: 0.8rem;\n  margin-top: 5px;\n}\n\n/* phone-layouts */\n\nnav {\n  position: fixed;\n  top: 0;\n  width: 100dvw;\n  height: 100px;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  z-index: 10;\n  display: none;\n  -webkit-transition: 2s ease all;\n  -o-transition: 2s ease all;\n  transition: 2s ease all;\n  display: none;\n}\n\nnav > .left {\n  margin-left: 30px;\n}\n\nnav button {\n  background: none;\n  border: none;\n  color: var(--text-color);\n  width: 50px;\n  height: 50px;\n  border-radius: 10px;\n  font-size: 1.5rem;\n  cursor: pointer;\n  background-color: hsla(0, 0%, 100%, 0.156);\n  -webkit-backdrop-filter: blur(15px);\n          backdrop-filter: blur(15px);\n}\n\nnav > .right {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: end;\n      -ms-flex-pack: end;\n          justify-content: flex-end;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  margin-right: 20px;\n  font-size: 1.3rem;\n  color: var(--text-color);\n}\n\n.fa-location-dot {\n  margin-left: 15px;\n}\n\n/* dropdown */\n\n.dropdown {\n  background-color: rgba(240, 248, 255, 0.069);\n  -webkit-backdrop-filter: filter(15px);\n          backdrop-filter: filter(15px);\n  position: fixed;\n  top: -130px;\n  width: 100dvw;\n  height: 100px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n  padding-left: 50px;\n  z-index: 100;\n  -webkit-transition: 1.5s ease all;\n  -o-transition: 1.5s ease all;\n  transition: 1.5s ease all;\n}\n\n.show {\n  top: 0;\n}\n\n.dropdown button {\n  background: none;\n  border: none;\n  font-size: 1.5rem;\n  cursor: pointer;\n}\n\n.dropdown .fa-magnifying-glass {\n  color: var(--text-color);\n  font-size: 1.6rem;\n}\n\n.dropdown input[type=\"search\"] {\n  border: 1px solid var(--text-color);\n  height: 40px;\n  margin-right: 40px;\n}\n\n.chev {\n  background: none;\n  border: none;\n  color: var(--text-color);\n  width: 50px;\n  height: 50px;\n  border-radius: 10px;\n  font-size: 1.5rem;\n  cursor: pointer;\n  background-color: hsla(0, 0%, 100%, 0.156);\n  -webkit-backdrop-filter: blur(15px);\n          backdrop-filter: blur(15px);\n  margin-left: 50px;\n  margin-right: 10px;\n}\n"],"sourceRoot":""}]);
+`, "",{"version":3,"sources":["webpack://./src/stylesheets/sidebar.css"],"names":[],"mappings":"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","sourcesContent":["aside {\n  width: 350px;\n  background-color: rgba(255, 255, 255, 0.148);\n  -webkit-backdrop-filter: blur(10px);\n  backdrop-filter: blur(10px);\n}\n\naside > .contents {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: column;\n  flex-direction: column;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n}\n\naside > .contents > .top {\n  margin-top: 30px;\n  height: 40%;\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: column;\n  flex-direction: column;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n}\n\ninput {\n  width: 230px;\n  height: 34px;\n  border: 0.5px solid var(--text-color);\n  background: transparent;\n  color: var(--text-color);\n  border-radius: 5px;\n  padding-left: 5px;\n  padding-top: 3px;\n}\n\n.fa-magnifying-glass {\n  color: var(--text-color);\n  font-size: 1.4rem;\n  margin-right: 15px;\n  cursor: pointer;\n}\n\n.temp-display {\n  font-size: 5rem;\n  margin-top: 20px;\n  margin-left: 5px;\n}\n\n.wind-display {\n  margin-top: 40px;\n  margin-bottom: 50px;\n  margin-left: 5px;\n}\n\naside .line {\n  width: 80%;\n  color: var(--text-color);\n  border: 0.1px solid var(--text-color);\n  margin-bottom: 40px;\n}\n\naside > .contents > .bottom {\n  -webkit-box-flex: 1;\n  -ms-flex: 1;\n  flex: 1;\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: column;\n  flex-direction: column;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n}\n\nh5 {\n  font-size: 1.3rem;\n  font-weight: 400;\n}\n\n.day-display {\n  width: 70%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: justify;\n  -ms-flex-pack: justify;\n  justify-content: space-between;\n}\n\naside .fore-casts {\n  width: 70%;\n  height: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: column;\n  flex-direction: column;\n  -webkit-box-pack: start;\n  -ms-flex-pack: start;\n  justify-content: flex-start;\n}\n\naside .fore-cast {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n}\n\naside .fore-cast:first-child {\n  margin-top: 30px;\n}\n\naside .fore-cast:nth-child(2),\naside .fore-cast:nth-child(3) {\n  margin-top: 40px;\n}\n\n.fore-cast > .left {\n  width: 50px;\n  height: 50px;\n  -webkit-backdrop-filter: blur(30px);\n  backdrop-filter: blur(30px);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-box-pack: center;\n  -ms-flex-pack: center;\n  justify-content: center;\n  border-radius: 5px;\n}\n\n.fore-cast > .left img {\n  width: 65%;\n}\n\n.fore-cast > .right {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n  -ms-flex-direction: column;\n  flex-direction: column;\n  -webkit-box-pack: start;\n  -ms-flex-pack: start;\n  justify-content: flex-start;\n  margin-left: 20px;\n  margin-top: 3px;\n  letter-spacing: 1.2px;\n}\n\n.fore-cast > .right > .top {\n  font-size: 1.1rem;\n}\n\n.fore-cast > .right > .bottom {\n  font-weight: 100;\n  font-size: 0.8rem;\n  margin-top: 5px;\n}\n\n/* phone-layouts */\n\nnav {\n  position: absolute;\n  top: 0;\n  width: 100%;\n  height: 100px;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  z-index: 10;\n  display: none;\n  -webkit-transition: 2s ease all;\n  -o-transition: 2s ease all;\n  transition: 2s ease all;\n  display: none;\n}\n\nnav > .left {\n  margin-left: 30px;\n}\n\nnav button {\n  background: none;\n  border: none;\n  color: var(--text-color);\n  width: 50px;\n  height: 50px;\n  border-radius: 10px;\n  font-size: 1.5rem;\n  cursor: pointer;\n  background-color: hsla(0, 0%, 100%, 0.156);\n  -webkit-backdrop-filter: blur(15px);\n  backdrop-filter: blur(15px);\n}\n\nnav > .right {\n  -webkit-box-flex: 1;\n  -ms-flex: 1;\n  flex: 1;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-pack: end;\n  -ms-flex-pack: end;\n  justify-content: flex-end;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  margin-right: 20px;\n  font-size: 1.3rem;\n  color: var(--text-color);\n}\n\n.fa-location-dot {\n  margin-left: 15px;\n}\n\n/* dropdown */\n\n.dropdown {\n  background-color: rgba(240, 248, 255, 0.069);\n  -webkit-backdrop-filter: filter(15px);\n  backdrop-filter: filter(15px);\n  position: fixed;\n  top: -130px;\n  width: 100dvw;\n  height: 100px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-align: center;\n  -ms-flex-align: center;\n  align-items: center;\n  -webkit-box-pack: start;\n  -ms-flex-pack: start;\n  justify-content: flex-start;\n  padding-left: 50px;\n  z-index: 100;\n  -webkit-transition: 1.5s ease all;\n  -o-transition: 1.5s ease all;\n  transition: 1.5s ease all;\n}\n\n.show {\n  top: 0;\n}\n\n.dropdown button {\n  background: none;\n  border: none;\n  font-size: 1.5rem;\n  cursor: pointer;\n}\n\n.dropdown .fa-magnifying-glass {\n  color: var(--text-color);\n  font-size: 1.6rem;\n}\n\n.dropdown input[type=\"search\"] {\n  border: 1px solid var(--text-color);\n  height: 40px;\n  margin-right: 40px;\n}\n\n.chev {\n  background: none;\n  border: none;\n  color: var(--text-color);\n  width: 50px;\n  height: 50px;\n  border-radius: 10px;\n  font-size: 1.5rem;\n  cursor: pointer;\n  background-color: hsla(0, 0%, 100%, 0.156);\n  -webkit-backdrop-filter: blur(15px);\n  backdrop-filter: blur(15px);\n  margin-left: 50px;\n  margin-right: 10px;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11408,4 +11408,4 @@ document.getElementById("search").addEventListener("click", () => {
 
 /******/ })()
 ;
-//# sourceMappingURL=index.9a8b7b7f2a5abbf37eb0.js.map
+//# sourceMappingURL=index.d813f08176781e1fed5b.js.map

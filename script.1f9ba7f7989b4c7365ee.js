@@ -3826,6 +3826,10 @@ async function getPhoneWeatherData() {
     url(../src/images/cool-phone.jpg);
     `;
   }
+  bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../src/images/cloudy.jpg);
+    `;
 }
 dropShow.addEventListener("click", () => {
   dropdown.classList.add("show");
@@ -3869,4 +3873,4 @@ document.body.addEventListener("keydown", event => {
 
 /******/ })()
 ;
-//# sourceMappingURL=script.7e932936f70a734d8e5a.js.map
+//# sourceMappingURL=script.1f9ba7f7989b4c7365ee.js.map
