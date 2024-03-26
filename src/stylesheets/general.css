@@ -28,7 +28,7 @@ body {
     url(../images/rainy.jpg);
   background-size: cover;
   background-position: center;
-  overflow-x: hidden;
+  overflow: hidden;
   /* transition: 1.3s; */
 }
 

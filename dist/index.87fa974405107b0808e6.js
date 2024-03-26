@@ -6137,13 +6137,13 @@ body {
     url(${___CSS_LOADER_URL_REPLACEMENT_0___});
   background-size: cover;
   background-position: center;
-  overflow-x: hidden;
+  overflow: hidden;
   /* transition: 1.3s; */
 }
 
 input{
   font-size: 1rem;
-}`, "",{"version":3,"sources":["webpack://./src/stylesheets/general.css"],"names":[],"mappings":"AAAA;;;EAGE,SAAS;EACT,UAAU;EACV,8BAA8B;UACtB,sBAAsB;EAC9B,uBAAuB;AACzB;;AAEA;EACE,wBAAwB;AAC1B;;AAEA;EACE,aAAa;EACb,YAAY;EACZ,wBAAwB;EACxB,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,kBAAkB;EAClB;2CAC0B;EAC1B;2CAC0B;EAC1B;2CAC0B;EAC1B,sBAAsB;EACtB,2BAA2B;EAC3B,kBAAkB;EAClB,sBAAsB;AACxB;;AAEA;EACE,eAAe;AACjB","sourcesContent":["*,\n*::after,\n*::before {\n  margin: 0;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  font-family: sans-serif;\n}\n\n:root {\n  --text-color: whitesmoke;\n}\n\nbody {\n  height: 100vh;\n  width: 100vw;\n  color: var(--text-color);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  position: relative;\n  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))),\n    url(../images/rainy.jpg);\n  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),\n    url(../images/rainy.jpg);\n  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),\n    url(../images/rainy.jpg);\n  background-size: cover;\n  background-position: center;\n  overflow-x: hidden;\n  /* transition: 1.3s; */\n}\n\ninput{\n  font-size: 1rem;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/stylesheets/general.css"],"names":[],"mappings":"AAAA;;;EAGE,SAAS;EACT,UAAU;EACV,8BAA8B;UACtB,sBAAsB;EAC9B,uBAAuB;AACzB;;AAEA;EACE,wBAAwB;AAC1B;;AAEA;EACE,aAAa;EACb,YAAY;EACZ,wBAAwB;EACxB,oBAAoB;EACpB,oBAAoB;EACpB,aAAa;EACb,kBAAkB;EAClB;2CAC0B;EAC1B;2CAC0B;EAC1B;2CAC0B;EAC1B,sBAAsB;EACtB,2BAA2B;EAC3B,gBAAgB;EAChB,sBAAsB;AACxB;;AAEA;EACE,eAAe;AACjB","sourcesContent":["*,\n*::after,\n*::before {\n  margin: 0;\n  padding: 0;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  font-family: sans-serif;\n}\n\n:root {\n  --text-color: whitesmoke;\n}\n\nbody {\n  height: 100vh;\n  width: 100vw;\n  color: var(--text-color);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  position: relative;\n  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))),\n    url(../images/rainy.jpg);\n  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),\n    url(../images/rainy.jpg);\n  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),\n    url(../images/rainy.jpg);\n  background-size: cover;\n  background-position: center;\n  overflow: hidden;\n  /* transition: 1.3s; */\n}\n\ninput{\n  font-size: 1rem;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11340,4 +11340,4 @@ document.getElementById("search").addEventListener("click", () => {
 
 /******/ })()
 ;
-//# sourceMappingURL=index.8bd57b32988402fcedc5.js.map
+//# sourceMappingURL=index.87fa974405107b0808e6.js.map
