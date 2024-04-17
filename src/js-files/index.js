@@ -25,7 +25,6 @@ async function getWeatherData() {
   const currentDate = new Date();
   const formattedDate = format(currentDate, "MMMM do, yyyy");
 
-  console.log(formattedDate);
 
   document.querySelector("nav > .right").innerHTML = `
         ${searchElement.value}
@@ -35,7 +34,6 @@ async function getWeatherData() {
   const now = new Date();
   const time = `${now.getHours()}:${now.getMinutes()}`;
 
-  console.log(time);
 
   const response = await fetch(
     `https://api.weatherapi.com/v1/forecast.json?key=ce01c314fa9446cab0c101255240603&q=${searchElement.value}`,
@@ -43,7 +41,6 @@ async function getWeatherData() {
   );
 
   const searchData = await response.json();
-  console.log(searchData);
   var weatherCondition = searchData.current.condition.text;
   var weatherIcon = searchData.current.condition.icon;
   var currentTempC = searchData.current.temp_c;

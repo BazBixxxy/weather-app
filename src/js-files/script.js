@@ -28,7 +28,6 @@ async function getPhoneWeatherData() {
   );
   const searchData = await response.json();
 
-  console.log(searchData);
   var weatherCondition = searchData.current.condition.text;
   var weatherIcon = searchData.current.condition.icon;
   var currentTempC = searchData.current.temp_c;

@@ -11202,19 +11202,16 @@ async function getWeatherData() {
   const searchElement = document.getElementById("input");
   const currentDate = new Date();
   const formattedDate = (0,date_fns__WEBPACK_IMPORTED_MODULE_8__.format)(currentDate, "MMMM do, yyyy");
-  console.log(formattedDate);
   document.querySelector("nav > .right").innerHTML = `
         ${searchElement.value}
         <i class="fa-solid fa-location-dot"></i>
   `;
   const now = new Date();
   const time = `${now.getHours()}:${now.getMinutes()}`;
-  console.log(time);
   const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=ce01c314fa9446cab0c101255240603&q=${searchElement.value}`, {
     mode: "cors"
   });
   const searchData = await response.json();
-  console.log(searchData);
   var weatherCondition = searchData.current.condition.text;
   var weatherIcon = searchData.current.condition.icon;
   var currentTempC = searchData.current.temp_c;
@@ -11332,4 +11329,4 @@ document.getElementById("search").addEventListener("click", () => {
 
 /******/ })()
 ;
-//# sourceMappingURL=index.34993414a51d20f6bf64.js.map
+//# sourceMappingURL=index.4af28fc2cc855e35b252.js.map
