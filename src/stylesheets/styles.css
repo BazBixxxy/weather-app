@@ -71,7 +71,7 @@ section .city-display h2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 130px;
   display: none;
 }
 
@@ -79,6 +79,11 @@ section .city-display h2 {
   position: absolute;
   top: 100px;
   right: 30px;
+  display: none;
+}
+
+.dropdown .right {
+  display: none;
 }
 
 .phone-section .weather-display {
