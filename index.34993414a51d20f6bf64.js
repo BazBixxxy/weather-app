@@ -11278,61 +11278,48 @@ async function getWeatherData() {
   <div class="top">Night, 10:00pm</div>
   <div class="bottom">${nightWeather}</div>
   `;
-
-  // if (
-  //   weatherCondition === "Partly cloudy" ||
-  //   weatherCondition === "Partly Cloudy" ||
-  //   weatherCondition === "Overcast"
-  // ) {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/partlycloudy.jpg);
-  //   `;
-  // } else if (weatherCondition === "Clear") {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/clear.jpg);
-  //   `;
-  // } else if (weatherCondition === "Sunny") {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/clear2.jpg);
-  //   `;
-  // } else if (
-  //   weatherCondition === "Patchy rain" ||
-  //   weatherCondition === "Patchy rain nearby"
-  // ) {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/patchyrains.jpg);
-  //   `;
-  // } else if (weatherCondition === "Mist" || weatherCondition === "Fog") {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/misty.jpg);
-  //   `;
-  // } else if (
-  //   weatherCondition === "Light rain" ||
-  //   weatherCondition === "Light drizzle"
-  // ) {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/rainy2.jpg);
-  //   `;
-  // } else {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/rainy.jpg);
-  //   `;
-  // }
-
-  // if (currentTempC < "3") {
-  //   bodyElement.style = `
-  //   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-  //   url(../src/images/snow.jpg);
-  //   `;
-  // }
-
+  if (weatherCondition === "Partly cloudy" || weatherCondition === "Partly Cloudy" || weatherCondition === "Overcast") {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://cdn.pixabay.com/photo/2023/05/30/15/53/clouds-8029036_1280.jpg);
+    `;
+  } else if (weatherCondition === "Clear") {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://cdn.pixabay.com/photo/2016/01/02/00/42/cloud-1117279_1280.jpg);
+    `;
+  } else if (weatherCondition === "Sunny") {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://images.unsplash.com/photo-1419833173245-f59e1b93f9ee?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    `;
+  } else if (weatherCondition === "Patchy rain" || weatherCondition === "Patchy rain nearby") {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://cdn.pixabay.com/photo/2017/08/06/09/22/rain-2590618_1280.jpg);
+    `;
+  } else if (weatherCondition === "Mist" || weatherCondition === "Fog") {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://cdn.pixabay.com/photo/2017/11/11/19/36/foggy-2940170_1280.jpg);
+    `;
+  } else if (weatherCondition === "Light rain" || weatherCondition === "Light drizzle") {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://cdn.pixabay.com/photo/2017/08/06/09/22/rain-2590618_1280.jpg);
+    `;
+  } else {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://cdn.pixabay.com/photo/2015/09/05/20/07/cabin-924958_1280.jpg);
+    `;
+  }
+  if (currentTempC <= "3") {
+    bodyElement.style = `
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://cdn.pixabay.com/photo/2024/02/24/10/31/norway-8593725_1280.jpg);
+    `;
+  }
   document.getElementById("input").value = "";
 }
 document.body.addEventListener("keydown", event => {
@@ -11345,4 +11332,4 @@ document.getElementById("search").addEventListener("click", () => {
 
 /******/ })()
 ;
-//# sourceMappingURL=index.ce30fc918720faff0b57.js.map
+//# sourceMappingURL=index.34993414a51d20f6bf64.js.map
