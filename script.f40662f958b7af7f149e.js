@@ -3707,7 +3707,6 @@ async function getPhoneWeatherData() {
     mode: "cors"
   });
   const searchData = await response.json();
-  console.log(searchData);
   var weatherCondition = searchData.current.condition.text;
   var weatherIcon = searchData.current.condition.icon;
   var currentTempC = searchData.current.temp_c;
@@ -3828,4 +3827,4 @@ document.body.addEventListener("keydown", event => {
 
 /******/ })()
 ;
-//# sourceMappingURL=script.3944d08083d91b53ae00.js.map
+//# sourceMappingURL=script.f40662f958b7af7f149e.js.map
